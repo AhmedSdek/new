@@ -1,0 +1,7 @@
+let links = document.querySelectorAll(".menu__link")
+links.forEach((item)=>{
+    item.addEventListener("click", ()=>{
+        let el = document.getElementById(item.getAttribute("data-link"));
+        el.scrollIntoView({behavior:"smooth"})
+    })
+})
